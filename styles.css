@@ -38,7 +38,7 @@ main {
 	color: #3a3a3a;
 	background-color: #e6eff4;
 	padding: 25px;
-    margin: 200px;
+	margin: 200px;
 }
 
 .red-background {
@@ -47,7 +47,7 @@ main {
 	display: flex;
 	align-items: center;
 	gap: 5px;
-    border-left: solid 5px #BC5C70;
+	border-left: solid 5px #bc5c70;
 }
 
 .red-background-txt {
@@ -59,17 +59,95 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .space-section {
-    display: flex;
-    padding-top: 20px;
+	display: flex;
+	padding-top: 20px;
 }
 
 .list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-top: 25px;
+}
+
+.searcher {
+	display: flex;
+	background-color: white;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 10px;
+	gap: 8px;
+	padding-left: 10px;
+	align-items: center;
+}
+
+.searcheer {
+	padding: 5px 50% 5px 5px;
+	color: #dbdbdb;
+	font-weight: 700;
+	size: 16px;
+}
+
+.searcheer::placeholder {
+	color: #dbdbdb;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+form {
+	margin: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.filtre {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.label-search {
+	border-radius: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+.label-search::placeholder {
+	color: #dbdbdb;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.text-filtre {
+	padding-bottom: 7px;
+	color: #3a3a3a;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+select {
+	border: none;
+	direction: rtl;
+	padding-right: 90px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin: 5px;
+}
+
+.btn-search {
+	
 }

@@ -3,23 +3,112 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./rules.css" />
-		<title>Document</title>
+		<title>Arena rules</title>
+		<link rel="stylesheet" href="/css/rules.css" />
+		<link rel="stylesheet" href="/css/header.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
-				<section class="logo-container">
-					<img src="./assets/logo.svg" alt="la mere a mickeal" />
-					<p>Minecraft wiki</p>
-				</section>
-				<section class="page-container">
-					<section class="explore-container">
-						<img src="./assets/compass.svg" alt="" />
-					</section>
-				</section>
+				<div class="links-div">
+					<a href="./index.html"
+						><img src="./assets/logo.svg" class="logo-img" alt="logo"
+					/></a>
+					<h2>Minecraft wiki</h2>
+					<ul>
+						<li>
+							<img
+								src="./assets/compass.svg"
+								class="link-img"
+								alt="explore-logo"
+							/><a href="./index.html" class="nav-link">EXPLORE</a>
+						</li>
+						<li>
+							<img
+								src="./assets/arena.svg"
+								class="link-img"
+								alt="arena-logo"
+							/><a href="./arena.html" class="nav-link">ARENA</a>
+						</li>
+						<li>
+							<img
+								src="./assets/rule.svg"
+								class="link-img"
+								alt="rules-logo"
+							/><a href="./rules.html" class="nav-link">RULES</a>
+						</li>
+					</ul>
+				</div>
+				<div class="ser" style="position: relative">
+					<img
+						src="./assets/search.svg"
+						style="
+							position: absolute;
+							top: 50%;
+							left: 35%;
+							transform: translateY(-50%);
+							width: 20px;
+						"
+					/>
+					<input
+						type="text"
+						placeholder="search.."
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							padding-left: 32px;
+							border-radius: 10px;
+							border: none;
+							height: 2rem;
+						"
+					/>
+				</div>
+				<button class="night">
+					<img src="./assets/nigth.svg" alt="ni" />
+				</button>
 			</nav>
+			<div class="sky"></div>
+			<div class="grass"></div>
 		</header>
+		<main>
+			<section>
+				<h1>Arena rules</h1>
+				<p>
+					<span class="bold">Arena</span> is Minecraft area where multiples
+					entities fight against one unique BOSS. This area represent a chuck of
+					32 blocks by 32 blocks in Minecraft world.
+				</p>
+				<p>
+					Every 10 minutes a new BOSS spawn at the center of the
+					<span>Arena</span> and start fighting against entities present inside
+					the area. The BOSS can only focus one entity by one and can not fight
+					multiples entities together.
+				</p>
+				<p>
+					To win the <span class="bold">Arena</span>, you need to defeat the
+					BOSS by placing new entities within this area. The
+					<span class="bold">Arena</span> is open during 10 minutes. During this
+					time, you can create, modify, or delete any entity you want. After 10
+					minutes, the <span class="bold">Arena</span> close, a new BOSS spawn
+					and start fighting against all entities inside the area.
+				</p>
+				<p>
+					You can not create, modify or delete any entities while the
+					<span>Arena</span> is closed.
+				</p>
+				<p>
+					The <span class="bold">Arena</span> stop fight and re-open when all
+					entities died inside area or BOSS is defeated.
+				</p>
+				<h3>How to create, modify or delete entity ?</h3>
+				<hr />
+				<p>
+					Visit <a src="" class="arena-tab-link">Arena tab</a> and modify create
+					or delete any entity you want.
+				</p>
+			</section>
+		</main>
 	</body>
 </html>
-

@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="header.css" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="header.css" />
 	</head>
 	<body>
 		<header>
@@ -28,7 +28,7 @@
 								fill="white"
 							/>
 						</svg>
-						<button>EXPLORE</button>
+						<button><a href="index.html">EXPLORE</a></button>
 					</li>
 					<li>
 						<svg
@@ -43,7 +43,7 @@
 								fill="white"
 							/>
 						</svg>
-						<button>ARENA</button>
+						<button><a href="arena.html">ARENA</a></button>
 					</li>
 					<li>
 						<svg
@@ -58,7 +58,7 @@
 								fill="white"
 							/>
 						</svg>
-						<button>RULES</button>
+						<button><a href="rules.html">RULES</a></button>
 					</li>
 				</ul>
 			</article>
@@ -154,7 +154,42 @@
 									fill="#262626"
 								/>
 							</svg>
-							<input type="text" placeholder="Search.." />
+							<input class="searcheer" type="text" placeholder="Search.." />
+						</div>
+						<div class="filtre">
+							<label for="classification">
+								<p class="text-filtre">Classification</p>
+								<select name="type" id="classification">
+									<option value="">Choose</option>
+									<option value="arthropod">arthropod</option>
+									<option value="undead">undead</option>
+									<option value="animal">animal</option>
+									<option value="aquatic">aquatic</option>
+									<option value="monster">monster</option>
+								</select>
+							</label>
+							<label for="type">
+								<p class="text-filtre">Type</p>
+								<select name="type" id="type">
+									<option value="">Type</option>
+									<option value="passive">passive</option>
+									<option value="neutral">neutral</option>
+									<option value="hostile">hostile</option>
+								</select>
+							</label>
+							<label for="health">
+								<p class="text-filtre">Health</p>
+								<input class="label-search" type="text" placeholder="18" />
+							</label>
+							<label for="damage">
+								<p class="text-filtre">Armor</p>
+								<input class="label-search" type="text" placeholder="12" />
+							</label>
+							<label for="damage">
+								<p class="text-filtre">Damage</p>
+								<input class="label-search" type="text" placeholder="2" />
+							</label>
+							<button class="btn-search"></button>
 						</div>
 					</form>
 				</div>
