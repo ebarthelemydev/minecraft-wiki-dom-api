@@ -166,6 +166,39 @@ select {
 	margin-top: 5%;
 }
 
+.img-search {
+	width: 20vh;
+}
+
+.div-global-card {
+	display: grid;
+	flex-direction: row;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 17px;
+}
+
+.div-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid;
+	padding: 6px;
+}
+
+.p-search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 5px;
+	width: 80%;
+	color: #ffffff;
+	font-weight: 700;
+	size: 15px;
+	box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: -4px -4px 2px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
 @media screen and (max-width: 490px) {
 	body {
 		width: max-content;
