@@ -64,3 +64,17 @@ input {
 	border-radius: 999px;
 	gap: 5px;
 }
+
+@media screen and (max-width: 490px) {
+	ul {
+		display: none;
+	}
+
+	body {
+		width: max-content;
+	}
+
+	.header-right {
+		gap: 50px;
+	}
+  }
