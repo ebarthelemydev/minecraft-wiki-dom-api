@@ -33,16 +33,53 @@ $form.addEventListener("submit", async (e) => {
 		img.classList.add("img-search");
 		divcard.appendChild(img);
 
+		let divsubtext = document.createElement("div");
+		divsubtext.classList.add("div-sub-text");
+		divcard.appendChild(divsubtext);
+
+		let divtext = document.createElement("div");
+		divtext.classList.add("div-text");
+		divsubtext.appendChild(divtext);
+
+		let a = document.createElement("a");
+		a.textContent = "Animal";
+		a.classList.add("a-card");
+		a.setAttribute("href", "");
+		divtext.appendChild(a);
+
+		let hr = document.createElement("hr");
+		hr.classList.add("hr-card");
+		divsubtext.appendChild(hr);
+
+		let ptype = document.createElement("p");
+		ptype.textContent = data[i].type;
+		ptype.classList.add("ptype");
+		divtext.appendChild(ptype);
+
+		let btn = document.createElement("btn");
+		btn.textContent = "SEE MORE";
+		btn.classList.add("btn-card");
+		divcard.appendChild(btn);
+
 		if (type == "neutral") {
 			p.style.backgroundColor = "rgba(227, 181, 153, 1)";
+			btn.style.backgroundColor = "rgba(227, 181, 153, 1)";
+			hr.style.backgroundColor = "rgba(227, 181, 153, 1)";
+			divcard.style.border = "solid 2px rgba(227, 181, 153, 1)";
 		}
 
 		if (type == "passive") {
 			p.style.backgroundColor = "rgba(79, 140, 105, 1)";
+			btn.style.backgroundColor = "rgba(79, 140, 105, 1)";
+			hr.style.backgroundColor = "rgba(79, 140, 105, 1)";
+			divcard.style.border = "solid 2px rgba(79, 140, 105, 1)";
 		}
 
 		if (type == "hostile") {
 			p.style.backgroundColor = "rgba(210, 70, 70, 1)";
+			btn.style.backgroundColor = "rgba(210, 70, 70, 1)";
+			hr.style.backgroundColor = "rgba(210, 70, 70, 1)";
+			divcard.style.border = "solid 2px rgba(210, 70, 70, 1)";
 		}
 	}
 });
