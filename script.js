@@ -33,16 +33,38 @@ $form.addEventListener("submit", async (e) => {
 		img.classList.add("img-search");
 		divcard.appendChild(img);
 
+		let divtext = document.createElement("div");
+		divtext.classList.add("div-text");
+		divcard.appendChild(divtext);
+
+		let a = document.createElement("a");
+		a.textContent = "Animal";
+		a.classList.add("ptype");
+		divtext.appendChild(a);
+
+		let ptype = document.createElement("p");
+		ptype.textContent = data[i].type;
+		ptype.classList.add("ptype");
+		divtext.appendChild(ptype);
+
+		let btn = document.createElement("btn");
+		btn.textContent = "SEE MORE";
+		btn.classList.add("btn-card");
+		divcard.appendChild(btn);
+
 		if (type == "neutral") {
 			p.style.backgroundColor = "rgba(227, 181, 153, 1)";
+			btn.style.backgroundColor = "rgba(227, 181, 153, 1)";
 		}
 
 		if (type == "passive") {
 			p.style.backgroundColor = "rgba(79, 140, 105, 1)";
+			btn.style.backgroundColor = "rgba(79, 140, 105, 1)";
 		}
 
 		if (type == "hostile") {
 			p.style.backgroundColor = "rgba(210, 70, 70, 1)";
+			btn.style.backgroundColor = "rgba(210, 70, 70, 1)";
 		}
 	}
 });
