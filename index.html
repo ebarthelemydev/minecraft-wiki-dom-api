@@ -140,7 +140,7 @@
 				</div>
 
 				<div class="form-search">
-					<form action="submit">
+					<form>
 						<div class="searcher">
 							<svg
 								width="18"
@@ -159,7 +159,7 @@
 						<div class="filtre">
 							<label for="classification">
 								<p class="text-filtre">Classification</p>
-								<select name="type" id="classification">
+								<select name="classification" id="classification">
 									<option value="">Choose</option>
 									<option value="arthropod">arthropod</option>
 									<option value="undead">undead</option>
@@ -179,21 +179,24 @@
 							</label>
 							<label for="health">
 								<p class="text-filtre">Health</p>
-								<input class="label-search" type="text" placeholder="18" />
+								<input name="health" class="label-search" type="text" placeholder="18" />
 							</label>
 							<label for="damage">
 								<p class="text-filtre">Armor</p>
-								<input class="label-search" type="text" placeholder="12" />
+								<input name="armor" class="label-search" type="text" placeholder="12" />
 							</label>
 							<label for="damage">
 								<p class="text-filtre">Damage</p>
-								<input class="label-search" type="text" placeholder="2" />
+								<input name="damage" class="label-search" type="text" placeholder="2" />
 							</label>
-							<button class="btn-search"></button>
+						</div>
+						<div class="btn-spawn-group">
+							<button class="btn-search">Search</button>
 						</div>
 					</form>
 				</div>
 			</section>
 		</main>
+		<script src="script.js"></script>
 	</body>
 </html>
